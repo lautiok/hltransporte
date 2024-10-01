@@ -28,6 +28,7 @@ export default function Form() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [loading, setLoading] = useState(false);
 
+  const number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -90,7 +91,7 @@ export default function Form() {
       *👥 Cantidad de Pasajeros:* ${formData.pasajeros}%0A
       *📝 Comentarios Adicionales:* ${formData.comentarios || "Ninguno"}`;
 
-      const whatsappURL = `https://wa.me/1234567890?text=${mensaje}`;
+      const whatsappURL = `https://wa.me/${number}?text=${mensaje}`;
 
       window.open(whatsappURL, "_blank");
 
