@@ -7,4 +7,6 @@ export interface FormData {
   fechaRegreso: string;
   pasajeros: number | string;
   comentarios: string;
+  HoraSalida: string;
+  HoraRegreso: string;
 }

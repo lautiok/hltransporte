@@ -52,3 +52,11 @@ export const validateRequired = (
   }
   return null;
 };
+
+export const validateHora = (hora: string): string | null => {
+  const regex = /^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/;
+  if (!regex.test(hora)) {
+    return "La hora debe tener el formato HH:MM.";
+  }
+  return null;
+};

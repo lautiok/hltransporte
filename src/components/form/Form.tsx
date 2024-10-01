@@ -7,6 +7,7 @@ import {
   validateFecha,
   validatePasajeros,
   validateRequired,
+  validateHora,
 } from "../../utils/verificarForm";
 import { FormData } from "@/type/form";
 
@@ -15,8 +16,10 @@ export default function Form() {
     nombre: "",
     telefono: "",
     fechaSalida: "",
+    HoraSalida: "",
     desde: "",
     hasta: "",
+    HoraRegreso: "",
     fechaRegreso: "",
     pasajeros: "",
     comentarios: "",
@@ -47,6 +50,9 @@ export default function Form() {
     const fechaSalidaError = validateFecha(formData.fechaSalida);
     if (fechaSalidaError) newErrors.fechaSalida = fechaSalidaError;
 
+    const horaSalidaError = validateHora(formData.HoraSalida);
+    if (horaSalidaError) newErrors.horaSalida = horaSalidaError;
+
     const desdeError = validateRequired(formData.desde, "El origen");
     if (desdeError) newErrors.desde = desdeError;
 
@@ -55,6 +61,9 @@ export default function Form() {
 
     const fechaRegresoError = validateFecha(formData.fechaRegreso);
     if (fechaRegresoError) newErrors.fechaRegreso = fechaRegresoError;
+
+    const horaRegresoError = validateHora(formData.HoraRegreso);
+    if (horaRegresoError) newErrors.horaRegreso = horaRegresoError;
 
     const pasajerosError = validatePasajeros(formData.pasajeros);
     if (pasajerosError) newErrors.pasajeros = pasajerosError;
@@ -73,8 +82,10 @@ export default function Form() {
       *Nombre y Apellido:* ${formData.nombre}%0A
       *📞 Teléfono:* ${formData.telefono}%0A
       *🗓️ Fecha de Salida:* ${formData.fechaSalida}%0A
+      *🕐 Hora de Salida:* ${formData.HoraSalida}%0A
       *🚩 Desde:* ${formData.desde}%0A
       *🏁 Hasta:* ${formData.hasta}%0A
+      *🕐 Hora de Regreso:* ${formData.HoraRegreso}%0A
       *🗓️ Fecha de Regreso:* ${formData.fechaRegreso}%0A
       *👥 Cantidad de Pasajeros:* ${formData.pasajeros}%0A
       *📝 Comentarios Adicionales:* ${formData.comentarios || "Ninguno"}`;
@@ -89,8 +100,10 @@ export default function Form() {
           nombre: "",
           telefono: "",
           fechaSalida: "",
+          HoraSalida: "",
           desde: "",
           hasta: "",
+          HoraRegreso: "",
           fechaRegreso: "",
           pasajeros: "",
           comentarios: "",
@@ -124,12 +137,23 @@ export default function Form() {
         <input
           type="text"
           name="fechaSalida"
-          placeholder="Fecha de salida (dd/mm/yyyy)"
+          placeholder="Fecha de salida"
           value={formData.fechaSalida}
           onChange={handleChange}
         />
         {errors.fechaSalida && (
           <p className={style.error}>{errors.fechaSalida}</p>
+        )}
+
+        <input
+          type="text"
+          name="HoraSalida"
+          placeholder="Hora de salida"
+          value={formData.HoraSalida}
+          onChange={handleChange}
+        />
+        {errors.HoraSalida && (
+          <p className={style.error}>{errors.HoraSalida}</p>
         )}
 
         <input
@@ -152,8 +176,19 @@ export default function Form() {
 
         <input
           type="text"
+          name="HoraRegreso"
+          placeholder="Hora de regreso"
+          value={formData.HoraRegreso}
+          onChange={handleChange}
+        />
+        {errors.HoraRegreso && (
+          <p className={style.error}>{errors.HoraRegreso}</p>
+        )}
+
+        <input
+          type="text"
           name="fechaRegreso"
-          placeholder="Fecha de regreso (dd/mm/yyyy)"
+          placeholder="Fecha de regreso"
           value={formData.fechaRegreso}
           onChange={handleChange}
         />
