@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 30rem;
+  height: 15rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cardHeader svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.cardsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsContent h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.cardsContent p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+.cardsContent button {
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cardsContent button:hover {
+  transform: scale(1.1);
+}
+
+.cardsContent button a {
+  color: #ff9d3c;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 430px) {
+  .card {
+    width: 22rem;
+    height: 12rem;
+  }
+
+  .cardsContent h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .cardsContent p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}

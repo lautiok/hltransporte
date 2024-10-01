@@ -1,0 +1,35 @@
+.servicios {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 99vh; /* O el valor que necesites según el tamaño de tu hero */
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9d3c;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #797979;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .servicios {
+    margin-top: 60vh;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .servicios {
+    margin-top: 52vh;
+  }
+}

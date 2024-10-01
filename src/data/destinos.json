@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "destino": "Buenos Aires",
+    "origen": "Cordoba",
+    "urlImagen": "/buenosaires.webp"
+  },
+  {
+    "id": 2,
+    "destino": "Mendoza",
+    "origen": "Cordoba",
+    "urlImagen": "/mendoza.webp"
+  },
+
+  {
+    "id": 3,
+    "destino": "Misiones",
+    "origen": "Cordoba",
+    "urlImagen": "/misiones.webp"
+  },
+  {
+    "id": 4,
+    "destino": "Rosario",
+    "origen": "Cordoba",
+    "urlImagen": "/rosario.webp"
+  },
+  {
+    "id": 5,
+    "destino": "San Juan",
+    "origen": "Cordoba",
+    "urlImagen": "/sanjuan.webp"
+  },
+  {
+    "id": 6,
+    "destino": "Santa Fe",
+    "origen": "Cordoba",
+    "urlImagen": "/santafe.webp"
+  }
+]

@@ -1,0 +1,118 @@
+.hero {
+  width: 100%;
+  background-image: url("../../assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 97vh;
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heroContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.bajar {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.heroContent {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+}
+
+.heroContent h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: var(--font-molika);
+  color: #ffffff;
+  margin-bottom: 0;
+  line-height: 0.9;
+}
+
+.heroContent p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  padding-right: 30rem;
+}
+
+.heroContent button {
+  background-color: #ff9d3c;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.heroContent button:hover {
+  background-color: #ff9d3cc5;
+}
+
+.heroContent button a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .heroContent h1 {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    height: 90vh;
+    padding: 1rem;
+    background-size: contain;
+    background-position: center;
+  }
+  .heroContent {
+    width: 100%;
+  }
+  .heroContent h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+  .heroContent p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroContent h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .heroContent p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 60vh;
+  }
+  .bajar {
+    display: none;
+  }
+}

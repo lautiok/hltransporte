@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Antares",
+    "description": "Cerveceria en Cordoba",
+    "urlImagen": "/publicidad-antares.webp"
+  },
+  {
+    "id": 2,
+    "name": "Dulce coco",
+    "description": "Estetica en Cordoba",
+    "urlImagen": "/publicidad-dulcecoco.webp"
+  },
+  {
+    "id": 3,
+    "name": "Cabaña Serrano",
+    "description": "Cabaña por temporada en Cordoba",
+    "urlImagen": "/publicidad-serrano.webp"
+  },
+  {
+    "id": 4,
+    "name": "Hermanos Luci",
+    "description": "Miel en Cordoba",
+    "urlImagen": "/publicidad-hermanosluci.webp"
+  }
+]

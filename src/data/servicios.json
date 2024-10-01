@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "svg": "plane",
+    "name": "translados al aeropuerto",
+    "description": "Puntualidad y confort desde el primer momento.",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "svg": "calendar",
+    "name": "translados a eventos",
+    "description": "Empieza a celebra desde el trayecto.",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "svg": "users",
+    "name": "translados ejecutivos",
+    "description": "Reuniones de negocios, conferencias y eventos empresariales.",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "svg": "split",
+    "name": "translados y turismo",
+    "description": "Descubre nuevos lugares con nosotros.",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "svg": "school",
+    "name": "translados escolares",
+    "description": "Seguridad y confianza en cada trayecto.",
+    "link": "#"
+  },
+  {
+    "id": 6,
+    "svg": "ball",
+    "name": "translados deportivos",
+    "description": "Apoya a tu equipo o asiste a eventos.",
+    "link": "#"
+  }
+]

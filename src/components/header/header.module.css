@@ -1,0 +1,93 @@
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: #00000075;
+  width: 100%;
+  transition: all 0.3s ease; /* Transición suave cuando el nav cambia de posición */
+}
+
+.nav.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 9; /* Asegura que el nav esté por debajo de las notificaciones */
+  background-color: #000000cc; /* Cambia un poco la opacidad si lo prefieres */
+}
+
+.navLogo h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav ul a {
+  font-family: var(--font-molika);
+  color: #d9d9d9;
+}
+
+.header button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.header button:hover {
+  border: 2px solid #ffffffb7;
+}
+
+.header button a {
+  font-family: var(--font-molika);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.notification {
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .header button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .nav {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLogo h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav ul {
+    gap: 0.5rem;
+  }
+
+  .nav ul a {
+    font-size: 0.8rem;
+  }
+}

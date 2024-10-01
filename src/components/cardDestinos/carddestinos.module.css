@@ -1,0 +1,87 @@
+.cardDestinos {
+  width: 30rem;
+  height: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardDestinos .cardDestinosImg {
+  width: 30rem;
+  height: 15rem;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.cardDestinos .cardDestinosImg img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.cardDestinos .cardDestinosImg:hover img {
+  transform: scale(1.05);
+}
+
+.cardDestinos .cardDestinosImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 165, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.cardDestinos .cardDestinosImg:hover::before {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  z-index: 2;
+  color: 474747;
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardDestinos .cardDestinosImg:hover .overlay {
+  opacity: 1;
+}
+
+.cardsContent {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.cardsContent h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (max-width: 430px) {
+  .cardDestinos {
+    width: 22rem;
+    height: 12rem;
+  }
+
+  .cardDestinos .cardDestinosImg {
+    width: 22rem;
+    height: 12rem;
+  }
+}

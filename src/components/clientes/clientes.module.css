@@ -1,0 +1,47 @@
+.clientes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.clientes h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9d3c;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #797979;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  width: 100%; /* Ocupa el 100% del ancho */
+}
+
+.galeryImg {
+  overflow: hidden; /* Asegura que las imágenes no se desborden */
+  height: 320px; /* Altura fija para todas las imágenes */
+}
+
+.galeryImg img {
+  width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+  height: 100%; /* Ocupa la altura del contenedor */
+  object-fit: cover; /* Recorta la imagen para que todas tengan la misma proporción */
+  display: block;
+}
+
+@media screen and (max-width: 430px) {
+  .galery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+  .galeryImg {
+    height: 200px; /* Altura fija para todas las imágenes */
+  }
+
+  .galeryImg img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: 100%; /* Ocupa la altura del contenedor */
+  }
+}
