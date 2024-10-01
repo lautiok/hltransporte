@@ -66,10 +66,10 @@
 @media screen and (max-width: 430px) {
   .form input,
   .form textarea {
-    width: 10rem;
+    width: 20rem;
   }
   .form button {
-    width: 10rem;
+    width: 20rem;
   }
   .form h2 {
     text-align: center;

@@ -5,13 +5,11 @@ import style from "./form.module.css";
 interface FormData {
   nombre: string;
   telefono: string;
-  email: string;
   fechaSalida: string;
   desde: string;
   hasta: string;
   fechaRegreso: string;
   pasajeros: number | string;
-  unidad: string;
   comentarios: string;
 }
 
@@ -19,13 +17,11 @@ export default function Form() {
   const [formData, setFormData] = useState<FormData>({
     nombre: "",
     telefono: "",
-    email: "",
     fechaSalida: "",
     desde: "",
     hasta: "",
     fechaRegreso: "",
     pasajeros: "",
-    unidad: "",
     comentarios: "",
   });
 
@@ -43,17 +39,17 @@ export default function Form() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const mensaje = `*COTIZACIÓN DE VIAJE*%0A
-    *Nombre y Apellido:* ${formData.nombre}%0A
-    *Teléfono:* ${formData.telefono}%0A
-    *Email:* ${formData.email}%0A
-    *Fecha de Salida:* ${formData.fechaSalida}%0A
-    *Desde:* ${formData.desde}%0A
-    *Hasta:* ${formData.hasta}%0A
-    *Fecha de Regreso:* ${formData.fechaRegreso}%0A
-    *Cantidad de Pasajeros:* ${formData.pasajeros}%0A
-    *Unidad a Disposición:* ${formData.unidad}%0A
-    *Comentarios Adicionales:* ${formData.comentarios}`;
+    const mensaje = `*📝 COTIZACIÓN DE VIAJE*%0A
+*Nombre y Apellido:* ${formData.nombre}%0A
+*📞 Teléfono:* ${formData.telefono}%0A
+*📧 Email:* ${formData.email}%0A
+*🗓️ Fecha de Salida:* ${formData.fechaSalida}%0A
+*🚩 Desde:* ${formData.desde}%0A
+*🏁 Hasta:* ${formData.hasta}%0A
+*🗓️ Fecha de Regreso:* ${formData.fechaRegreso}%0A
+*👥 Cantidad de Pasajeros:* ${formData.pasajeros}%0A
+*🚐 Unidad a Disposición:* ${formData.unidad}%0A
+*📝 Comentarios Adicionales:* ${formData.comentarios || "Ninguno"}`;
 
     const whatsappURL = `https://wa.me/+541136620274?text=${mensaje}`;
     window.open(whatsappURL, "_blank");
@@ -77,13 +73,7 @@ export default function Form() {
           value={formData.telefono}
           onChange={handleChange}
         />
-        <input
-          type="text"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
+
         <input
           type="text"
           name="fechaSalida"
@@ -117,13 +107,6 @@ export default function Form() {
           name="pasajeros"
           placeholder="Cantidad de pasajeros"
           value={formData.pasajeros}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="unidad"
-          placeholder="Unidad a disposición"
-          value={formData.unidad}
           onChange={handleChange}
         />
         <textarea
