@@ -42,13 +42,11 @@ export default function Form() {
     const mensaje = `*📝 COTIZACIÓN DE VIAJE*%0A
 *Nombre y Apellido:* ${formData.nombre}%0A
 *📞 Teléfono:* ${formData.telefono}%0A
-*📧 Email:* ${formData.email}%0A
 *🗓️ Fecha de Salida:* ${formData.fechaSalida}%0A
 *🚩 Desde:* ${formData.desde}%0A
 *🏁 Hasta:* ${formData.hasta}%0A
 *🗓️ Fecha de Regreso:* ${formData.fechaRegreso}%0A
 *👥 Cantidad de Pasajeros:* ${formData.pasajeros}%0A
-*🚐 Unidad a Disposición:* ${formData.unidad}%0A
 *📝 Comentarios Adicionales:* ${formData.comentarios || "Ninguno"}`;
 
     const whatsappURL = `https://wa.me/+541136620274?text=${mensaje}`;
