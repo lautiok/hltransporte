@@ -6,13 +6,13 @@ export default function Notification() {
     <section className={styles.notification}>
       <div className={styles.notification_email_number}>
         <div className={styles.notification_contact}>
-          <a href="">
+          <a href="maito:cotizaciones@hltransporte.com.ar" target="_blank">
             <Mail />
             <span>cotizaciones@hltransporte.com.ar</span>
           </a>
         </div>
         <div className={styles.notification_contact}>
-          <a href="">
+          <a href="https://wa.me/5493515326971" target="_blank">
             <Phone />
             <span>+54 03515326971</span>
           </a>

@@ -8,7 +8,7 @@ export default function CardPublicidad({
   urlImagen,
 }: CardPublicidadType) {
   return (
-    <section key={id} className={styles.cardDestinos}>
+    <article key={id} className={styles.cardDestinos}>
       <div className={styles.cardDestinosImg}>
         <img src={urlImagen} alt={name} />
         <div className={styles.overlay}>
@@ -18,6 +18,6 @@ export default function CardPublicidad({
       <div className={styles.cardsContent}>
         <h3>{name}</h3>
       </div>
-    </section>
+    </article>
   );
 }

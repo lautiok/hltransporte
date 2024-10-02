@@ -22,10 +22,13 @@ export default function Footer() {
             </div>
             <div className={styles.footerLinksItem}>
               <Link href="/nosotros">Preguntas Frecuentes</Link>
-              <Link href="/servicios">Sobre Nuestros Servicios</Link>
+              <Link href="/#servicios">Sobre Nuestros Servicios</Link>
             </div>
             <div className={styles.footerredesItem}>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/hl_viajes_y_turismo/"
+                target="_blank"
+              >
                 <Instagram size={24} />
               </a>
               <a href="#">
@@ -40,8 +43,11 @@ export default function Footer() {
       </div>
       <div className={styles.reserve}>
         <p>
-          © {new Date().getFullYear()} Hermanos Luci Viajes y Turismo | Todos
-          los derechos reservados
+          © {new Date().getFullYear()} Hermanos Luci Viajes y Turismo |
+          desarrollado por{" "}
+          <a href="https://www.nahuelguerra.com.ar/" target="_blank">
+            Nahuel Guerra
+          </a>
         </p>
       </div>
     </footer>

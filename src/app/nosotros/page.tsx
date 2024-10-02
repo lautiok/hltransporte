@@ -4,7 +4,7 @@ import Historia from "@/components/historia/Historia";
 export default function page() {
   return (
     <main>
-      <HeroNosotros />
+      <HeroNosotros arriba="SOBRE" abajo="NOSOTROS" />
       <Historia />
     </main>
   );

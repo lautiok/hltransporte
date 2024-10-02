@@ -177,17 +177,6 @@ export default function Form() {
 
         <input
           type="text"
-          name="HoraRegreso"
-          placeholder="Hora de regreso"
-          value={formData.HoraRegreso}
-          onChange={handleChange}
-        />
-        {errors.HoraRegreso && (
-          <p className={style.error}>{errors.HoraRegreso}</p>
-        )}
-
-        <input
-          type="text"
           name="fechaRegreso"
           placeholder="Fecha de regreso"
           value={formData.fechaRegreso}
@@ -195,6 +184,17 @@ export default function Form() {
         />
         {errors.fechaRegreso && (
           <p className={style.error}>{errors.fechaRegreso}</p>
+        )}
+
+        <input
+          type="text"
+          name="HoraRegreso"
+          placeholder="Hora de regreso"
+          value={formData.HoraRegreso}
+          onChange={handleChange}
+        />
+        {errors.HoraRegreso && (
+          <p className={style.error}>{errors.HoraRegreso}</p>
         )}
 
         <input

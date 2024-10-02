@@ -75,6 +75,10 @@
   margin: 0;
 }
 
+.reserve a {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 430px) {
   .footerContent {
     gap: 0.5rem;

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Vehiculo de 4 asientos",
+    "svg": "",
+    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "name": "Vehiculo de 6 asientos",
+    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 3,
+    "name": "Vehiculo de 8 asientos",
+    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 4,
+    "name": "Vehiculo de 10 asientos",
+    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 5,
+    "name": "Vehiculo de 12 asientos",
+    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 6,
+    "name": "Vehiculo de 14 asientos",
+    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "link": "#",
+    "svg": ""
+  }
+]

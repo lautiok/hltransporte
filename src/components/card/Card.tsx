@@ -10,9 +10,9 @@ import {
   LoaderPinwheel,
 } from "lucide-react";
 
-export default function Card({ svg, name, description, link, id }: CardType) {
+export default function Card({ svg, name, description, id }: CardType) {
   return (
-    <section className={styles.card} key={id}>
+    <article className={styles.card} key={id}>
       <header className={styles.cardHeader}>
         {svg === "plane" ? (
           <Plane color="#ff9d3c" />
@@ -24,17 +24,19 @@ export default function Card({ svg, name, description, link, id }: CardType) {
           <Split color="#ff9d3c" />
         ) : svg === "school" ? (
           <School color="#ff9d3c" />
-        ) : (
+        ) : svg === "loader" ? (
           <LoaderPinwheel color="#ff9d3c" />
-        )}
+        ) : null}
       </header>
       <div className={styles.cardsContent}>
         <h3>{name}</h3>
         <p>{description}</p>
         <button>
-          <a href={link}>saber más</a>
+          <a href="https://wa.me/5493515326971" target="_blank">
+            saber más
+          </a>
         </button>
       </div>
-    </section>
+    </article>
   );
 }
