@@ -1,7 +1,7 @@
 import styles from "./historia.module.css";
 export default function Historia() {
   return (
-    <section className={styles.historia}>
+    <article className={styles.historia}>
       <h2>HISTORIA</h2>
       <p>
         En Hermanos Luci Viajes y Turismo, llevamos más de 4 años dedicados a
@@ -36,6 +36,6 @@ export default function Historia() {
         hacemos que cada kilómetro recorrido valga la pena. ¡Estamos listos para
         llevarte a donde lo necesites!
       </p>
-    </section>
+    </article>
   );
 }

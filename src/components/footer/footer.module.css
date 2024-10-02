@@ -9,10 +9,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #474747;
   gap: 10rem;
   padding: 2rem;
   width: 100%;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footerTitle {
@@ -22,12 +31,15 @@
   gap: 10rem;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .footerLinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10rem;
 }
 
 .footerLinksItem {
@@ -42,6 +54,7 @@
 
 .footerredesItem {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
@@ -77,6 +90,12 @@
 
 .reserve a {
   color: #ffffff;
+}
+
+@media screen and (max-width: 785px) {
+  .footerTitle {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 430px) {

@@ -41,12 +41,12 @@
 }
 
 .heroContent p {
+  max-width: 1000px;
   font-size: 2rem;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 2rem;
   margin-top: 0;
-  padding-right: 30rem;
 }
 
 .heroContent button {

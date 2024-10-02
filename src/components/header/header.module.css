@@ -10,14 +10,17 @@
   padding: 1rem;
   background-color: #00000075;
   width: 100%;
-  transition: all 0.3s ease; /* Transición suave cuando el nav cambia de posición */
+  transition: all 0.6s ease;
+  transform: translateY(0);
 }
 
 .nav.fixed {
   position: fixed;
   top: 0;
-  z-index: 9; /* Asegura que el nav esté por debajo de las notificaciones */
+  z-index: 9;
   background-color: #000000cc; /* Cambia un poco la opacidad si lo prefieres */
+  transform: translateY(-6px); /* Desplazamiento inicial para la animación */
+  transition: transform 0.6s ease; /* Añade una transición al cambio de posición */
 }
 
 .navLogo h1 {
@@ -59,12 +62,19 @@
   z-index: 10;
 }
 
+@media screen and (max-width: 734px) {
+  .header button {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .nav {
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
   }
+
   .header button {
     display: none;
   }

@@ -8,6 +8,7 @@ import {
   Split,
   School,
   LoaderPinwheel,
+  BusFront,
 } from "lucide-react";
 
 export default function Card({ svg, name, description, id }: CardType) {
@@ -26,7 +27,9 @@ export default function Card({ svg, name, description, id }: CardType) {
           <School color="#ff9d3c" />
         ) : svg === "loader" ? (
           <LoaderPinwheel color="#ff9d3c" />
-        ) : null}
+        ) : (
+          <BusFront color="#ff9d3c" />
+        )}
       </header>
       <div className={styles.cardsContent}>
         <h3>{name}</h3>

@@ -83,6 +83,12 @@ a {
   }
 }
 
+article {
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 30% 30%;
+}
+
 section {
   animation: reveal linear both;
   animation-timeline: view();
@@ -91,6 +97,9 @@ section {
 
 @media screen and (max-width: 430px) {
   section {
+    animation-range: entry 10% 10%;
+  }
+  article {
     animation-range: entry 10% 10%;
   }
 }

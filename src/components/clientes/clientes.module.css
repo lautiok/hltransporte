@@ -30,6 +30,11 @@
   height: 100%; /* Ocupa la altura del contenedor */
   object-fit: cover; /* Recorta la imagen para que todas tengan la misma proporción */
   display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.galeryImg:hover img {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 430px) {

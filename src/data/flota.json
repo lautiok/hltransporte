@@ -1,43 +1,85 @@
 [
   {
     "id": 1,
-    "name": "Vehiculo de 4 asientos",
-    "svg": "",
-    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
-    "link": "#"
-  },
-  {
-    "id": 2,
     "name": "Vehiculo de 6 asientos",
-    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
-    "link": "#",
-    "svg": ""
-  },
-  {
-    "id": 3,
-    "name": "Vehiculo de 8 asientos",
-    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
-    "link": "#",
-    "svg": ""
+    "svg": "",
+    "description": "Ideal para recorridos cortos, brinda comodidad y estilo.",
+    "link": "#"
   },
   {
     "id": 4,
     "name": "Vehiculo de 10 asientos",
-    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "description": "Diseñado para grupos grandes, ofrece espacio y confort en trayectos largos.",
     "link": "#",
     "svg": ""
   },
   {
     "id": 5,
     "name": "Vehiculo de 12 asientos",
-    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "description": "Ideal para excursiones grupales, proporciona comodidad y versatilidad necesaria.",
     "link": "#",
     "svg": ""
   },
   {
     "id": 6,
-    "name": "Vehiculo de 14 asientos",
-    "description": "el vehiculo ideal para viajes cortos y de larga distancia.",
+    "name": "Vehiculo de 15 asientos",
+    "description": "Espacioso y cómodo, es ideal para viajes grupales en largas distancias.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 7,
+    "name": "Vehiculo de 17 asientos",
+    "description": "Perfecto para viajes largos con grupos grandes, garantiza comodidad y espacio.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 8,
+    "name": "Vehiculo de 19 asientos",
+    "description": "Ideal para grandes excursiones, combina comodidad y amplio espacio interior.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 9,
+    "name": "Vehiculo de 24 asientos",
+    "description": "Ideal para eventos grandes, proporciona comodidad y espacio para todos los pasajeros.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 10,
+    "name": "Vehiculo de 40 asientos",
+    "description": "Perfecto para transportar grupos numerosos, combina espacio y confort óptimos.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 11,
+    "name": "Vehiculo de 42 asientos",
+    "description": "Diseñado para grandes reuniones, ofrece un viaje cómodo y amplio para todos.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 12,
+    "name": "Vehiculo de 45 asientos",
+    "description": "Perfecto para transportar grupos numerosos, combina espacio y confort óptimos.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 13,
+    "name": "Vehiculo de 60 asientos",
+    "description": "Ideal para transportar a muchas personas, garantiza comodidad en largas distancias.",
+    "link": "#",
+    "svg": ""
+  },
+  {
+    "id": 14,
+    "name": "Vehiculo Furgon",
+    "description": "Ideal para mudanzas y encomiendas",
     "link": "#",
     "svg": ""
   }
