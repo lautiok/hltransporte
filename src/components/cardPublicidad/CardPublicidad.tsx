@@ -8,7 +8,12 @@ export default function CardPublicidad({
   urlImagen,
 }: CardPublicidadType) {
   return (
-    <article key={id} className={styles.cardDestinos}>
+    <a
+      href="https://www.google.com"
+      target="blank"
+      key={id}
+      className={styles.cardDestinos}
+    >
       <div className={styles.cardDestinosImg}>
         <img src={urlImagen} alt={name} />
         <div className={styles.overlay}>
@@ -18,6 +23,6 @@ export default function CardPublicidad({
       <div className={styles.cardsContent}>
         <h3>{name}</h3>
       </div>
-    </article>
+    </a>
   );
 }

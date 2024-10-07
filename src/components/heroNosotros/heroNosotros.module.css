@@ -107,7 +107,7 @@
 @media screen and (max-width: 430px) {
   .hero {
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 60vh;
   }
   .bajar {
