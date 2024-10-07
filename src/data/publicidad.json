@@ -3,24 +3,28 @@
     "id": 1,
     "name": "Antares",
     "description": "Cerveceria en Cordoba",
-    "urlImagen": "/publicidad-antares.webp"
+    "urlImagen": "/publicidad-antares.webp",
+    "url": "https://www.instagram.com/antares_cordoba/"
   },
   {
     "id": 2,
     "name": "Dulce coco",
     "description": "Estetica en Cordoba",
-    "urlImagen": "/publicidad-dulcecoco.webp"
+    "urlImagen": "/publicidad-dulcecoco.webp",
+    "url": "https://www.instagram.com/dulce.coco.estetica/"
   },
   {
     "id": 3,
     "name": "Holiday Inn",
     "description": "Hotel en Cordoba",
-    "urlImagen": "/publicidad-holidayinn.webp"
+    "urlImagen": "/publicidad-holidayinn.webp",
+    "url": "https://hinncordoba.com.ar/"
   },
   {
     "id": 4,
     "name": "Hermanos Luci",
     "description": "Miel en Cordoba",
-    "urlImagen": "/publicidad-hermanosluci.webp"
+    "urlImagen": "/publicidad-hermanosluci.webp",
+    "url": "https://wa.link/w3f0q0"
   }
 ]

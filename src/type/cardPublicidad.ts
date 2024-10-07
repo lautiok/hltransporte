@@ -3,4 +3,5 @@ export interface CardPublicidadType {
   name: string;
   description: string;
   urlImagen: string;
+  url?: string;
 }

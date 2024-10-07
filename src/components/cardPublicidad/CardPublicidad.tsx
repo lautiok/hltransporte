@@ -6,14 +6,10 @@ export default function CardPublicidad({
   name,
   description,
   urlImagen,
+  url,
 }: CardPublicidadType) {
   return (
-    <a
-      href="https://www.google.com"
-      target="blank"
-      key={id}
-      className={styles.cardDestinos}
-    >
+    <a href={url} target="blank" key={id} className={styles.cardDestinos}>
       <div className={styles.cardDestinosImg}>
         <img src={urlImagen} alt={name} />
         <div className={styles.overlay}>

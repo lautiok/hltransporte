@@ -13,6 +13,7 @@ export default function Carrousel() {
             name={item.name}
             description={item.description}
             urlImagen={item.urlImagen}
+            url={item.url}
           />
         ))}
       </div>
